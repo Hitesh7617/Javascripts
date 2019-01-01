@@ -1,0 +1,29 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+$(document).ready(function(){
+  $(".toggle").click(function(){
+  $("#on").show();
+  $("#off").hide();
+  $(".switch").show();
+  $(".toggle").hide();
+  });
+  $(".switch").click(function(){
+  $("#off").show();
+  $("#on").hide();
+  $(".toggle").show();
+  $(".switch").hide();
+  });
+  });
+</script>
+</body>
+<button class="toggle">ON</button>
+<button class="switch" style="display:none;">OFF</button>
+<div id="dang">
+<img id ="off" src="bulboff.gif" style="width:100px">
+<img id ="on" src="bulbon.gif" style="display:none;">
+</div>
+</html>
